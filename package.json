@@ -1,0 +1,19 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "### User stories: 1. I can submit a form that includes a file upload. 2. The form file input field  has the \"name\" attribute set to \"upfile\". 3. When I submit something, I will receive the file name and size in bytes within the JSON response.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristina Savova",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "engines": {
+    "node": "12.x" 
+  }
+}
