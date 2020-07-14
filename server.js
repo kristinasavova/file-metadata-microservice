@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     if (err instanceof multer.MulterError) {
         console.log('A multer error occurred when uploading', err);
-        res.json({ error: 'A multer error occurred when uploading' });
+        res.json({ error: `A multer error occurred when uploading: ${err.message}` });
     } else if (err) {
         err.message = err.message || 'Internal Server Error';
         res.status(err.status || 500);
